@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './recepcion-ordenes.component.css'
 })
 export class RecepcionOrdenesComponent {
-
+  receptionOrder() {
+    if (window.confirm('¿Confirmar recepción de orden?')) {
+      window.location.href = '/recepcion-ordenes';
+    } else {
+      alert('Recepción de orden cancelada');
+      window.location.href = '/home';
+    }
+  }
 }

@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './gestion-reuniones.component.css'
 })
 export class GestionReunionesComponent {
-
+  crearReunion() {
+    window.location.href = '/creacion-reuniones';
+  }
+  actualizarReunion() {
+    window.location.href = '/actualizar-reuniones';
+  }
 }

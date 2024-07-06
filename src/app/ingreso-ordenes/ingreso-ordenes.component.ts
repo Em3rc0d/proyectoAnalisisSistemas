@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './ingreso-ordenes.component.css'
 })
 export class IngresoOrdenesComponent {
-
+  confirmOrder() {
+    if (window.confirm('¿Confirmar pedido?')) {
+      window.location.href = '/ingreso-ordenes';
+    } else {
+      alert('Confirmación de pedido cancelada');
+      window.location.href = '/home';
+    }
+  }
 }

@@ -1,0 +1,33 @@
+<div class="dashboard p-6 bg-gray-200 rounded-lg shadow-lg overflow-auto">
+    <table class="table mt-4 w-full border-collapse border border-gray-300">
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="border border-gray-300 px-4 py-2">Fecha</th>
+                <th class="border border-gray-300 px-4 py-2">Hora</th>
+                <th class="border border-gray-300 px-4 py-2">Participantes</th>
+                <th class="border border-gray-300 px-4 py-2">Objetivo</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white">
+            <tr *ngFor="let meeting of meetings; let i = index" [attr.data-index]="i">
+                <td class="border border-gray-300 px-4 py-2">
+                    <input type="text" class="form-input w-full px-2 py-1 border rounded focus:outline-none focus:shadow-outline" [(ngModel)]="meeting.fecha">
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                    <input type="text" class="form-input w-full px-2 py-1 border rounded focus:outline-none focus:shadow-outline" [(ngModel)]="meeting.hora">
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                    <input type="text" class="form-input w-full px-2 py-1 border rounded focus:outline-none focus:shadow-outline" [(ngModel)]="meeting.participantes">
+                </td>
+                <td class="border border-gray-300 px-4 py-2">
+                    <input type="text" class="form-input w-full px-2 py-1 border rounded focus:outline-none focus:shadow-outline" [(ngModel)]="meeting.objetivo">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class="flex items-center justify-evenly">
+        <button (click)="guardarTodo()"
+            class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Guardar Cambios</button>
+    </div>
+</div>

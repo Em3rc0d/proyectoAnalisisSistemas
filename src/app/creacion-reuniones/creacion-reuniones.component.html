@@ -1,0 +1,38 @@
+<div class="dashboard p-6 bg-gray-100 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-4 text-center">Programación de Reuniones</h1>
+    <form class="mt-4">
+        <div class="form-group mb-4">
+            <label for="meeting-date" class="block text-gray-700 text-sm font-bold mb-2">Fecha</label>
+            <input type="date" id="meeting-date"
+                class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="form-group mb-4">
+            <label for="meeting-time" class="block text-gray-700 text-sm font-bold mb-2">Hora</label>
+            <input type="time" id="meeting-time"
+                class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="form-group mb-4">
+            <label for="meeting-participants" class="block text-gray-700 text-sm font-bold mb-2">Participantes</label>
+            <select id="meeting-participants"
+                class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                multiple>
+                <option value="participant1">Andrés Perez</option>
+                <option value="participant2">Julian Lopez</option>
+                <option value="participant3">Sofía Gonzalez</option>
+                <option value="participant4">Ximena Martín</option>
+                <option value="participant5">Carlos Martín</option>
+            </select>
+        </div>
+        <div class="form-group mb-4">
+            <label for="meeting-objective" class="block text-gray-700 text-sm font-bold mb-2">Objetivo</label>
+            <textarea id="meeting-objective"
+                class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <div class="flex items-center justify-evenly mb-3">
+            <button type="button" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            (click)="confirmMeeting()">
+            Programar Reunión
+            </button>
+        </div>
+    </form>
+</div>

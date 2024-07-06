@@ -1,28 +1,40 @@
-<div class="container mx-auto px-4 max-h-svh">
-  <div class="flex items-center flex-col justify-center h-1/5">
-    <h1 class="text-3xl font-bold my-3">CORE CAPITAL S.A.F</h1>
-    <div class="dashboard p-3 bg-gray-200 rounded-lg shadow-lg">
-      <div class="flex items-center justify-around mt-0">
-        <button routerLink="/generacion-avisos" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Generación de Avisos</button>
-        <button routerLink="/gestion-reuniones" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4">Gestión de Reuniones</button>
-        <button routerLink="/ingreso-ordenes" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4">Ingreso de Ordenes</button>
-        <button routerLink="/recepcion-ordenes" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4">Recepción de Ordenes</button>
+<div class="container mx-auto px-4 max-h-screen">
+  <div class="flex flex-col items-center justify-center h-1/5">
+    <div class="flex flex-col items-center pb-3">
+      <h1 class="text-3xl font-bold my-3">CORE CAPITAL S.A.F</h1>
+      <img class="w-1/2 md:w-1/3" src="coreCap.png" alt="asd">
+    </div>
+    <div class="dashboard p-3 bg-gray-200 rounded-lg shadow-lg w-full max-w-4xl">
+      <div class="flex flex-wrap items-center justify-around mt-0">
+        <button routerLink="/home" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0">
+          Inicio
+        </button>
+        <button routerLink="/generacion-avisos" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0">
+          Generación de Avisos
+        </button>
+        <button routerLink="/gestion-reuniones" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0">
+          Gestión de Reuniones
+        </button>
+        <button routerLink="/ingreso-ordenes" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2 md:mb-0">
+          Ingreso de Ordenes
+        </button>
+        <button routerLink="/recepcion-ordenes" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Recepción de Ordenes
+        </button>
       </div>
     </div>
   </div>
   <div class="dashboard p-2 bg-gray-100 rounded-lg shadow-lg h-3/5 overflow-y-scroll">
-    <router-outlet />
+    <router-outlet></router-outlet>
   </div>
-  <div class="dashboard py-2 px-4 bg-gray-200 rounded-lg shadow-lg h-1/5">
+  <div class="dashboard py-2 px-4 bg-gray-200 rounded-lg shadow-lg h-1/5 font-semibold w-full max-w-4xl mx-auto mt-4">
     <h2>Curso: Análisis de Sistemas</h2>
     <h3 class="mt-4">Integrantes:</h3>
-    <ul>
-      <div class="flex items-center justify-around mt-4">
-        <li>Eduardo Merino</li>
-        <li>Hector Martinez</li>
-        <li>Ivan Hubel</li>
-        <li>Victor Farfán</li>
-      </div>
+    <ul class="flex flex-wrap items-center justify-around mt-4">
+      <li class="mb-2 md:mb-0">Eduardo Merino</li>
+      <li class="mb-2 md:mb-0">Hector Martinez</li>
+      <li class="mb-2 md:mb-0">Ivan Hubel</li>
+      <li>Victor Farfán</li>
     </ul>
   </div>
 </div>
