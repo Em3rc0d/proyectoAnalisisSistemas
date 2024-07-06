@@ -1,0 +1,93 @@
+<div class="dashboard p-6 bg-gray-100 rounded-lg shadow-lg">
+    <button class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Gestión de Reuniones y Planificación
+    </button>
+    <table class="table mt-4 w-full border-collapse border border-gray-300">
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="border border-gray-300 px-4 py-2">Fecha</th>
+                <th class="border border-gray-300 px-4 py-2">Hora</th>
+                <th class="border border-gray-300 px-4 py-2">Participantes</th>
+                <th class="border border-gray-300 px-4 py-2">Objetivo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Datos de la reunión aquí -->
+        </tbody>
+    </table>
+    <button class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+        Crear/Actualizar Cronograma
+    </button>
+
+    <!-- Formulario de Programación de Reuniones -->
+    <form class="mt-4">
+        <div class="form-group mb-4">
+            <label for="meeting-date" class="block text-gray-700 text-sm font-bold mb-2">Fecha</label>
+            <input type="date" id="meeting-date" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="form-group mb-4">
+            <label for="meeting-time" class="block text-gray-700 text-sm font-bold mb-2">Hora</label>
+            <input type="time" id="meeting-time" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="form-group mb-4">
+            <label for="meeting-participants" class="block text-gray-700 text-sm font-bold mb-2">Participantes</label>
+            <select id="meeting-participants" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" multiple>
+                <!-- Opciones de participantes -->
+            </select>
+        </div>
+        <div class="form-group mb-4">
+            <label for="meeting-objective" class="block text-gray-700 text-sm font-bold mb-2">Objetivo</label>
+            <textarea id="meeting-objective" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <button type="button" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Programar Reunión
+        </button>
+        <button type="button" class="btn-secondary ml-2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            Cancelar
+        </button>
+    </form>
+
+    <!-- Confirmación de Programación -->
+    <div class="confirmation mt-4">
+        <p class="text-gray-700 text-sm mb-2">¿Confirmar programación de la reunión?</p>
+        <button class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Confirmar
+        </button>
+        <button class="btn-secondary ml-2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            Cancelar
+        </button>
+    </div>
+
+    <!-- Formulario de Cronograma Gantt -->
+    <form class="mt-4">
+        <div class="form-group mb-4">
+            <label for="gantt-tasks" class="block text-gray-700 text-sm font-bold mb-2">Tareas del cronograma</label>
+            <textarea id="gantt-tasks" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <div class="form-group mb-4">
+            <label for="gantt-dates" class="block text-gray-700 text-sm font-bold mb-2">Fechas de inicio y fin</label>
+            <input type="text" id="gantt-dates" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="form-group mb-4">
+            <label for="gantt-resources" class="block text-gray-700 text-sm font-bold mb-2">Asignación de recursos</label>
+            <input type="text" id="gantt-resources" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <button type="button" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Guardar Cronograma
+        </button>
+        <button type="button" class="btn-secondary ml-2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            Cancelar
+        </button>
+    </form>
+
+    <!-- Confirmación de Cronograma -->
+    <div class="confirmation mt-4">
+        <p class="text-gray-700 text-sm mb-2">¿Confirmar carga del cronograma?</p>
+        <button class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Confirmar
+        </button>
+        <button class="btn-secondary ml-2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            Cancelar
+        </button>
+    </div>
+</div>

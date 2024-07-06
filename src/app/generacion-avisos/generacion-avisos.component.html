@@ -1,0 +1,53 @@
+<div class="dashboard p-6 bg-gray-100 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-4">Generación de Avisos de Oferta</h2>
+
+    <!-- Formulario de Aviso -->
+    <form class="mt-4">
+        <div class="form-group mb-4">
+            <label for="offer-type" class="block text-gray-700 text-sm font-bold mb-2">Tipo de oferta</label>
+            <input type="text" id="offer-type" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="form-group mb-4">
+            <label for="notice-content" class="block text-gray-700 text-sm font-bold mb-2">Contenido del aviso</label>
+            <textarea id="notice-content" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <div class="form-group mb-4">
+            <label for="relevant-dates" class="block text-gray-700 text-sm font-bold mb-2">Fechas relevantes</label>
+            <input type="text" id="relevant-dates" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="flex items-center justify-center mt-6">
+            <button type="button" class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2">
+                Crear Aviso
+            </button>
+            <button type="button" class="btn-secondary bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mx-2">
+                Cancelar
+            </button>
+        </div>
+    </form>
+
+    <!-- Confirmación de Aviso -->
+    <div class="confirmation mt-8">
+        <p class="text-gray-700 text-sm mb-2 text-center">¿Confirmar creación del aviso?</p>
+        <div class="flex items-center justify-center mt-4">
+            <button class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2">
+                Confirmar
+            </button>
+            <button class="btn-secondary bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mx-2">
+                Cancelar
+            </button>
+        </div>
+    </div>
+
+    <!-- Envío de Avisos -->
+    <div class="send-notices mt-8">
+        <p class="text-gray-700 text-sm mb-2 text-center">Lista de inversionistas</p>
+        <div class="flex items-center justify-center mt-4">
+            <button class="btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2">
+                Enviar Aviso a Inversionistas
+            </button>
+            <button class="btn-secondary bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mx-2">
+                Cancelar
+            </button>
+        </div>
+    </div>
+</div>
